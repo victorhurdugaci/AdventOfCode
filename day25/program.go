@@ -37,7 +37,7 @@ func calculateCodeIndex(row uint64, col uint64) uint64 {
     
     // First figure the length of the side
     var side uint64 = row + col - 1
-   
+
     // Calculate how many numbers are in that triangle
     var totalNumbers uint64 = side * (side + 1) / 2
     
@@ -46,18 +46,3 @@ func calculateCodeIndex(row uint64, col uint64) uint64 {
     
     return index
 }
-
-func max(a uint64, b uint64) uint64 {
-    if (a > b) {
-        return a
-    }
-    return b
-}
-
-func check(e error) {
-    if e != nil {
-        panic(e)
-    }
-}
-
-
